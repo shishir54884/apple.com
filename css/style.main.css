@@ -1,0 +1,824 @@
+.a, #airpods .airpods-link a, #watch .watch-link a, #iphone .iphone-link a, #ipad .ipad-link a, #mac .mac-link a, .d-manu .drop-link a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.simple-btn-link {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #0066cc;
+  margin: 10px 0;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.a, #airpods .airpods-link a, #watch .watch-link a, #iphone .iphone-link a, #ipad .ipad-link a, #mac .mac-link a, .d-manu .drop-link a {
+  text-decoration: none;
+  color: #030303;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Segoe UI", sans-serif;
+  border-width: 0px;
+  padding: 0.5rem 0;
+  position: relative;
+}
+.a::before, #airpods .airpods-link a::before, #watch .watch-link a::before, #iphone .iphone-link a::before, #ipad .ipad-link a::before, #mac .mac-link a::before, .d-manu .drop-link a::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 3px;
+  background-color: #0066cc;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.a:hover, #airpods .airpods-link a:hover, #watch .watch-link a:hover, #iphone .iphone-link a:hover, #ipad .ipad-link a:hover, #mac .mac-link a:hover, .d-manu .drop-link a:hover {
+  color: rgb(40, 116, 160);
+}
+.a:hover::before, #airpods .airpods-link a:hover::before, #watch .watch-link a:hover::before, #iphone .iphone-link a:hover::before, #ipad .ipad-link a:hover::before, #mac .mac-link a:hover::before, .d-manu .drop-link a:hover::before {
+  width: 100%;
+}
+
+.manu, #airpods, #watch, #iphone, #ipad, #mac {
+  position: fixed;
+  top: 3.3rem;
+  left: 0;
+  background-color: rgba(236, 222, 222, 0.293);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding-right: 7rem;
+  border-radius: 10px;
+  z-index: 100;
+  display: none;
+}
+
+.manu-links, #airpods .airpods-link, #watch .watch-link, #iphone .iphone-link, #ipad .ipad-link, #mac .mac-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    height: 80vh;
+  }
+  .content .img-box {
+    width: 100px;
+  }
+  .content .text-box {
+    width: 100%;
+  }
+  .content-2 {
+    max-height: 80vh !important;
+    background-size: auto 60% !important;
+  }
+  .nav-icon .fa-bars {
+    display: block !important;
+  }
+  .nav-menu {
+    display: none;
+    width: 100%;
+  }
+  .nav-logo {
+    width: 30% !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+}
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 10px 20px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .nav-container .nav-icon {
+    width: 70%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  main {
+    padding-top: 0;
+    height: 80vh !important;
+  }
+  .content {
+    background-image: url("/image/responsive/hero_holiday_2024__bbs03706zple_small_2x.jpg") !important;
+  }
+  .content .text-box {
+    width: 100%;
+  }
+  .content .text-box .text-box-item {
+    padding: 2rem 0;
+  }
+  .content .text-box .text-box-item h2 {
+    font-size: 2rem !important;
+    font-weight: 200;
+  }
+  .content .text-box .text-box-item p {
+    font-size: 0.9rem !important;
+    padding: 1rem 0 !important;
+  }
+  .content .text-box .text-box-item a {
+    font-size: 0.7rem !important;
+  }
+  .content-2 {
+    background-image: url("/image/responsive/hero_iphone16pro_avail__fnf0f9x70jiy_small_2x.jpg") !important;
+    height: 100vh !important;
+    padding-top: 0 !important;
+  }
+}
+nav {
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "geist", sans-serif;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(20px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 24px;
+  position: fixed;
+  z-index: 1000;
+  -webkit-transition: background-color 0.3s ease, -webkit-backdrop-filter 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-backdrop-filter 0.3s ease;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease;
+}
+
+.nav-logo {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-logo img {
+  width: 1.5rem;
+}
+
+.nav-menu {
+  width: 60%;
+}
+
+.nav-menu .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+}
+
+.nav-menu .nav-link a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.8rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.nav-menu .nav-link a:hover {
+  color: blue;
+}
+.nav-menu .nav-link a:checked {
+  color: #004d99;
+}
+
+.nav-icon {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.nav-icon .nav-icon-item {
+  margin-left: 0.5rem;
+}
+
+.nav-icon-item a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.nav-icon-item a:hover {
+  color: #004d99;
+}
+.nav-icon-item a i {
+  font-size: 0.8rem;
+}
+
+.nav-icon-item .fa-bars {
+  font-size: 1rem;
+  margin-left: 1rem;
+  display: none;
+  margin-top: 4px;
+}
+.nav-icon-item .fa-bars i {
+  color: #004d99;
+}
+.nav-icon-item .fa-bars:hover {
+  color: #004d99;
+}
+
+.dropdown-menu {
+  display: none;
+  padding: 1rem 0;
+  width: 100%;
+  background-color: rgba(184, 168, 168, 0.458);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: fixed;
+  top: 4rem;
+  z-index: 100;
+}
+.dropdown-menu .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.dropdown-menu .nav-link #nav-mac {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.dropdown-menu .nav-link #nav-mac i {
+  font-size: 1rem;
+}
+.dropdown-menu .nav-link a {
+  text-decoration: none;
+  color: #000000;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.dropdown-menu .nav-link a:hover {
+  color: #004d99;
+}
+
+.d-manu {
+  width: 110px;
+  height: 150px;
+  padding: 0.4rem 0;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 0.4rem;
+  top: 3.5rem;
+  left: 67%;
+  display: none;
+}
+.d-manu .drop-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.d-manu .drop-link a {
+  color: #000000;
+  padding: 1rem 0.5rem;
+  display: inline-block;
+}
+
+#mac {
+  padding-right: 7rem !important;
+  left: 23%;
+  z-index: 1000;
+}
+#ipad {
+  padding-right: 7rem !important;
+  left: 32%;
+  z-index: 1000;
+}
+#iphone {
+  left: 40%;
+}
+#watch {
+  padding-right: 7rem !important;
+  left: 48%;
+}
+#airpods {
+  padding-right: 7rem !important;
+  left: 57%;
+}
+main {
+  width: 100%;
+  padding: 30px 0;
+  height: 80vh;
+  background-color: #F5F5F7;
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("/image/hero_holiday_2024__bbs03706zple_large.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+.content:hover {
+  background-color: rgb(255, 255, 255);
+}
+.content .text-box {
+  width: 50%;
+  text-align: center;
+  padding-top: 15rem;
+}
+.content .text-box .text-box-item {
+  padding: 2rem 0;
+}
+.content .text-box .text-box-item h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "geist", sans-serif;
+  margin-top: 1rem;
+}
+.content .text-box .text-box-item p {
+  font-size: 1rem;
+  padding-top: 0.9rem;
+  font-family: "open-sans", sans-serif;
+}
+.content .text-box .text-box-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 13px 23px;
+  border-radius: 25px;
+  background-color: #0066cc;
+  margin-top: 1rem;
+}
+.content .text-box .text-box-item a:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .content {
+    background-image: url("/image/hero_holiday_2024__bbs03706zple_small_2x.jpg") !important;
+  }
+}
+.content-3 {
+  width: 100%;
+  height: 80vh;
+  background-image: url("/image/hero_iphone16pro_avail__fnf0f9x70jiy_large.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 9px solid #ffffff;
+  border-bottom: 9px solid #ffffff;
+}
+.content-3 .content-3-item {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 2rem 0;
+}
+.content-3 .content-3-item .content-3-item-text {
+  text-align: center;
+  color: #ffffff;
+}
+.content-3 .content-3-item .content-3-item-text h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "geist", sans-serif;
+  margin-top: 1rem;
+}
+.content-3 .content-3-item .content-3-item-text p {
+  font-size: 1rem;
+  padding-top: 0.9rem;
+  font-family: "open-sans", sans-serif;
+}
+.content-3 .content-3-item .content-3-item-text a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 13px 23px;
+  border-radius: 25px;
+  background-color: #0066cc;
+  margin-top: 1rem;
+}
+.content-3 .content-3-item .content-3-item-text a:hover {
+  background-color: #0056b3;
+}
+.content-3 .content-3-item .content-3-item-text h2 {
+  font-size: 3.5rem;
+}
+.content-3 .content-3-item .content-3-item-text p {
+  font-size: 1.8rem;
+}
+.content-3 .content-3-item .content-3-item-text .content-3-item-text-button #content-3-item-text-button-buy {
+  background-color: transparent;
+  border: 1px solid #0066cc;
+}
+.content-3 .content-3-item .content-3-item-text .content-3-item-text-button #content-3-item-text-button-buy:hover {
+  background-color: #0066cc;
+}
+
+@media (max-width: 1024px) {
+  .content-3 {
+    background-image: url("/image/hero_iphone16pro_avail__fnf0f9x70jiy_mediumtall.jpg") !important;
+    height: 80vh !important;
+  }
+}
+@media (max-width: 768px) {
+  .content-3 {
+    background-image: url("/image/hero_iphone16pro_avail__fnf0f9x70jiy_small_2x.jpg") !important;
+    height: 80vh !important;
+  }
+  .content-3 .content-3-item {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .content-3 .content-3-item .content-3-item-text h2 {
+    font-size: 2.5rem;
+  }
+}
+#content-4 {
+  background-image: url("/image/hero_iphone16_avail__euwzls69btea_large.jpg");
+}
+
+#box-1 {
+  background-image: url("/image/macbook.jpg");
+  color: #fff;
+}
+
+#box-2 {
+  background-image: url("/image/macmini.jpg");
+}
+
+#box-3 {
+  background-image: url("/image/imac.jpg");
+}
+
+#box-4 {
+  background-image: url("/image/watch.jpg");
+}
+#box-4 img {
+  margin: 0.5rem 0;
+}
+
+#box-5 {
+  background-image: url("/image/promo.jpg");
+}
+#box-5 img {
+  margin: 0.5rem 0;
+}
+#box-5 p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  width: 45%;
+}
+
+#box-6 {
+  background-image: url("/image/card.jpg");
+}
+#box-6 img {
+  margin: 0.5rem 0;
+}
+#box-6 p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  width: 45%;
+}
+
+.grid-box {
+  width: 100%;
+  padding: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 500px);
+  gap: 0.4rem 0.6rem;
+}
+.grid-box .box {
+  width: 100%;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+}
+.grid-box .box .box-item {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2.5rem;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.grid-box .box .box-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.grid-box .box .box-item p {
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.grid-box .box .box-item .box-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+.grid-box .box .box-item .box-button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.4rem 1rem;
+  border: 1px solid #1003c2;
+  border-radius: 3rem;
+  background-color: #0066cc;
+  margin-top: 1rem;
+}
+.grid-box .box .box-item .box-button a:hover {
+  background-color: #395499;
+  color: #ffffff;
+}
+.grid-box .box .box-item .box-button a:nth-child(2) {
+  background-color: transparent;
+  color: #0066cc;
+}
+.grid-box .box .box-item .box-button a:nth-child(2):hover {
+  background-color: #0066cc;
+  color: #ffffff;
+}
+
+@media (max-width: 1060px) {
+  #box-4 {
+    background-image: url("/image/resw.jpg") !important;
+  }
+  #box-5 p {
+    width: 70%;
+  }
+  #box-6 p {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .grid-box {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(6, 500px) !important;
+    padding: 0 !important;
+  }
+  #box-5 p {
+    width: 56%;
+  }
+  #box-6 p {
+    width: 56%;
+  }
+}
+#slide-1 {
+  background-image: url("/image/slide1.jpg") !important;
+}
+
+#slide-2 {
+  background-image: url("/image/bad.jpg") !important;
+}
+
+#slide-3 {
+  background-image: url("/image/disc.jpg") !important;
+}
+
+#slide-4 {
+  background-image: url("/image/silo.jpg") !important;
+}
+
+#slide-5 {
+  background: orange;
+}
+
+#slide-6 {
+  background: purple;
+}
+
+#slide-7 {
+  background: pink;
+}
+
+.swiper {
+  width: 1250px !important;
+  height: 600px !important;
+  padding-bottom: 1rem !important;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Added to center the slides */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent !important;
+  /* Center the slides horizontally */
+}
+
+.swiper-wrapper {
+  background: transparent !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100% !important;
+  height: 100% !important;
+  background: transparent;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-slide h1 {
+  color: white;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1250px) {
+  .swiper {
+    width: 100% !important;
+    height: 400px !important;
+    padding: 1rem 0 !important;
+  }
+  .swiper .swiper-slide {
+    height: 400px !important;
+    width: 100% !important;
+    background-size: cover !important;
+  }
+}
+@media (max-width: 768px) {
+  #slide-1 {
+    background-image: url("/image/548x1186 (1).jpg") !important;
+  }
+  #slide-2 {
+    background-image: url("/image/548x1186 (2).jpg") !important;
+  }
+  #slide-3 {
+    background-image: url("/image/resdic.jpg") !important;
+  }
+  #slide-4 {
+    background-image: url("/image/ressilo.jpg") !important;
+  }
+  .swiper {
+    height: 400px !important;
+    width: 90% !important;
+    padding: 1rem 0 !important;
+  }
+  .swiper .swiper-slide {
+    height: 400px !important;
+    width: 100% !important;
+    background-size: cover;
+  }
+}
+.test {
+  background: green;
+  height: 100px;
+}
+
+@font-face {
+  font-family: "sue";
+  src: url("/font/SueEllenFrancisco-Regular.ttf");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("/font/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "roboto-black";
+  src: url("/font/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: "geist";
+  src: url("/font/Geist-Regular.ttf");
+}

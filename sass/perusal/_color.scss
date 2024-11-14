@@ -1,0 +1,30 @@
+// Primary colors
+$black: #000000;
+$white: #ffffff;
+$gray: #86868b;
+
+// Secondary colors 
+$light-gray: #f5f5f7;
+$dark-gray: #1d1d1f;
+
+// Accent colors
+$blue: #0066cc;
+$red: #ff3b30;
+$green: #28cd41;
+$black: #000000;
+$white: #ffffff;
+$gray: #86868b;
+
+// Background colors
+$bg-primary: $blue;
+$bg-secondary: $light-gray;
+$bg-dark: $black;
+
+// Text colors
+$text-primary: $black;
+$text-secondary: $gray;
+$text-light: $white;
+
+// Link colors
+$link-color: $blue;
+$link-hover: darken($blue, 10%);

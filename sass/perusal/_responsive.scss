@@ -1,0 +1,68 @@
+@media (max-width: 1024px) {
+    .content {
+        height: 80vh;
+        .img-box {
+            width: 100px;
+        }
+        .text-box {
+            width: 100%;
+        }
+    }
+    .content-2 {
+        max-height: 80vh !important;
+        background-size: auto 60% !important;
+    }
+    .nav-icon .fa-bars {
+        display: block !important;
+    }
+    .nav-menu {
+        display: none;
+        width: 100%;
+    }
+    .nav-logo {
+        width: 30% !important;
+        justify-content: flex-start !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 10px 20px;
+        justify-content: flex-end;
+
+        .nav-icon {
+            width: 70%;
+            justify-content: flex-end;
+        }
+    }
+   
+    main {
+        padding-top: 0;
+        height: 80vh !important;
+    }
+    .content {
+        background-image: url("/image/responsive/hero_holiday_2024__bbs03706zple_small_2x.jpg") !important;
+        .text-box {
+            width: 100%;
+            .text-box-item {
+                padding: 2rem 0;
+                h2 {
+                    font-size: 2rem !important;
+                    font-weight: 200;
+                }
+                p {
+                    font-size: 0.9rem !important;
+                    padding: 1rem 0 !important;
+                }
+                a {
+                    font-size: 0.7rem !important;
+                }
+            }
+        }
+    }
+    .content-2 {
+        background-image: url("/image/responsive/hero_iphone16pro_avail__fnf0f9x70jiy_small_2x.jpg") !important;
+        height: 100vh !important;
+        padding-top: 0 !important;
+    }
+}

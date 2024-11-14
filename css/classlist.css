@@ -1,0 +1,35 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'roboto-black', sans-serif;
+    display: inline-block;
+}
+p{
+    font-family: 'roboto', sans-serif;
+    font-size: 1.2rem;
+}
+.active{
+    display: block;
+}
+
+.slide-toggle{
+    transition: all .3s ease in out;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+li{
+    list-style: none;
+}

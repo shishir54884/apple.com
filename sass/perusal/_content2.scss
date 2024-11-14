@@ -1,0 +1,65 @@
+
+ .content-3{
+    width: 100%;
+    height: 80vh;
+    background-image: url("/image/hero_iphone16pro_avail__fnf0f9x70jiy_large.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 9px solid $text-light;
+    border-bottom: 9px solid $text-light;
+    .content-3-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2rem 0;
+
+    .content-3-item-text{
+        @include content;
+        text-align: center;
+        color: $text-light;
+        h2{
+            font-size: 3.5rem;
+        }
+        p{
+            font-size: 1.8rem;
+        }
+        .content-3-item-text-button{
+           #content-3-item-text-button-buy{
+            background-color: transparent;
+            border: 1px solid $blue;
+            &:hover{
+                background-color: $blue;
+            }
+           }
+    }
+    }
+}
+}
+@media (max-width:1024px){
+    .content-3{
+        background-image: url('/image/hero_iphone16pro_avail__fnf0f9x70jiy_mediumtall.jpg')!important;
+        height: 80vh!important;
+
+    }
+}
+@media (max-width: 768px) {
+    .content-3 {
+        background-image: url("/image/hero_iphone16pro_avail__fnf0f9x70jiy_small_2x.jpg")!important;
+        height: 80vh!important;
+        .content-3-item{
+            justify-content: flex-end;
+            
+            .content-3-item-text{
+                h2{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+#content-4{
+    background-image: url('/image/hero_iphone16_avail__euwzls69btea_large.jpg');
+}

@@ -1,0 +1,161 @@
+#box-1 {
+  background-image: url('/image/macbook.jpg'); // Updated image path
+  color: #fff;
+}
+
+#box-2 {
+  background-image: url('/image/macmini.jpg'); // Updated image path
+}
+
+#box-3 {
+  background-image: url('/image/imac.jpg'); // Updated image path
+}
+
+#box-4 {
+  background-image: url('/image/watch.jpg'); // Updated image path
+
+  img {
+    margin: 0.5rem 0;
+  }
+}
+
+#box-5 {
+  background-image: url('/image/promo.jpg'); // Updated image path
+
+  img {
+    margin: 0.5rem 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    width: 45%;
+  }
+}
+
+#box-6 {
+  background-image: url('/image/card.jpg'); // Updated image path
+
+  img {
+    margin: 0.5rem 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    width: 45%;
+  }
+}
+
+.grid-box {
+  width: 100%;
+  padding: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 500px);
+  gap: 0.4rem 0.6rem;
+
+  .box {
+    width: 100%;
+    background-color: red;
+    display: flex; // Added to enable flex properties
+    flex-direction: column; // Added to stack children vertically
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+
+    .box-item {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 2.5rem;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      p {
+        font-size: 1.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .box-button {
+        display: flex;
+        gap: 1rem;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1rem;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          padding: 0.4rem 1rem;
+          border: 1px solid #1003c2;
+          border-radius: 3rem;
+          background-color: $blue;
+          margin-top: 1rem;
+        }
+
+        a:hover {
+          background-color: #395499;
+          color: $text-light;
+        }
+
+        a:nth-child(2) {
+          background-color: transparent;
+          color: $blue;
+        }
+
+        a:nth-child(2):hover {
+          background-color: $blue;
+          color: $text-light;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  #box-4 {
+    background-image: url("/image/resw.jpg") !important; // Updated image path
+  }
+
+  #box-5 {
+    p {
+      width: 70%;
+    }
+  }
+
+  #box-6 {
+    p {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-box {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(6, 500px) !important;
+    padding: 0 !important;
+  }
+
+  #box-5 {
+    p {
+      width: 56%;
+    }
+  }
+
+  #box-6 {
+    p {
+      width: 56%;
+    }
+  }
+}

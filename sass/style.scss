@@ -1,0 +1,29 @@
+@import "./perusal/color";
+@import "./perusal/pre";
+@import "./perusal/responsive";
+@import "./perusal/nav";
+@import "./perusal/content";
+@import "./perusal/content2";
+@import "./perusal/grid";
+@import "./perusal/slider";
+
+@font-face {
+    font-family: 'sue';
+    src: url('/font/SueEllenFrancisco-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('/font/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'roboto-black';
+    src: url('/font/Roboto-Black.ttf');
+}
+
+@font-face {
+    font-family: 'geist';
+    src: url('/font/Geist-Regular.ttf');
+}
+

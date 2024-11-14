@@ -1,0 +1,120 @@
+#slide-1 {
+    background-image: url('/image/slide1.jpg') !important;
+}
+
+#slide-2 {
+    background-image: url('/image/bad.jpg') !important;
+}
+
+#slide-3 {
+    background-image: url('/image/disc.jpg') !important;
+}
+
+#slide-4 {
+    background-image: url('/image/silo.jpg') !important;
+}
+
+#slide-5 {
+    background: orange;
+}
+
+#slide-6 {
+    background: purple;
+}
+
+#slide-7 {
+    background: pink;
+}
+
+.swiper {
+    width: 1250px !important;
+    height: 600px !important;
+    padding-bottom: 1rem !important;
+    background: transparent;
+    display: flex;
+    /* Added to center the slides */
+    justify-content: center;
+    background-color: transparent !important;
+    /* Center the slides horizontally */
+}
+
+.swiper-wrapper {
+    background: transparent !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 100% !important;
+    background: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    h1{
+        color: white;
+        padding: 1rem 0;
+        font-size: 2rem;
+    }
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 1250px) {
+    .swiper {
+        width: 100% !important;
+        height: 400px !important;
+        padding: 1rem 0 !important;
+        .swiper-slide {
+            height: 400px !important;
+            width: 100% !important;
+            background-size: cover !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #slide-1 {
+        background-image: url('/image/548x1186 (1).jpg') !important;
+    }
+
+    #slide-2 {
+        background-image: url('/image/548x1186 (2).jpg') !important;
+    }
+
+    #slide-3 {
+        background-image: url('/image/resdic.jpg') !important;
+    }
+
+    #slide-4 {
+        background-image: url('/image/ressilo.jpg') !important;
+    }
+
+    .swiper {
+        height: 400px !important;
+        width: 90% !important;
+        padding: 1rem 0 !important;
+
+        .swiper-slide {
+            height: 400px !important;
+            width: 100% !important;
+            background-size: cover;
+
+        }
+
+    }
+}
+.test {
+    background: green;
+    height: 100px;
+}
